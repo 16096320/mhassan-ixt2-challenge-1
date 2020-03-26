@@ -1,0 +1,44 @@
+body {
+	background-color: #0C0C0C;
+	margin:0;
+	font-family: Roboto;
+	color: black;
+}
+
+.chart-con {
+	border: solid white 1px;
+	padding:15px;
+}
+
+.box {
+	border: white 1px solid;
+	align-items: center;
+}
+
+@media only screen and (max-width: 599px) {
+	.data-con {
+		flex-wrap: wrap;
+	}
+
+	.chart-con {
+		flex-basis: 100%;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 999px){
+	.data-con{
+		display: flex;
+	}
+	.chart-con {
+		flex:1;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.data-con{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.chart-con {
+		flex:1;
+	}
+}
